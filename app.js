@@ -10,6 +10,9 @@ function generateQR() {
 
     imgBox.classList.add("show-img");
   } else {
-    alert("Please, type your text or URL!");
+    qrText.classList.add("error");
+    setTimeout(() => {
+      qrText.classList.remove("error");
+    }, 1000);
   }
 }
